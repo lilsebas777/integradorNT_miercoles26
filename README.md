@@ -1,133 +1,55 @@
-# 🐍 neoApp - Módulo de Análisis de Datos
+# 🚀 NeoApp - Módulo de Análisis de Datos (Python)
 
-## Juan Jose Gallego Mesa 
-## Laura Perez Muñoz
-## Brayan Vegetta Gallego (grupo de vierenes 6 am)
-## Bulma Sofia Gallego
+#juan sebastian moreno valencia
+#alexander oliveros
+#grupo miercoles 6am
 
-## 📊 Descripción
+## 📌 Descripción
 
-**neoApp** es una solución educativa enfocada en la **gestión y control de gastos hormiga** 💸, integrando tecnologías modernas como:
+**NeoApp** es una solución tecnológica orientada a la gestión eficiente de pedidos en una empresa de mensajería 📦. Este proyecto integra un ecosistema moderno compuesto por:
 
-- 🐍 Python (análisis de datos)
-- ⚛️ React (frontend)
-- ☕ Spring Boot (backend)
+- 🐍 **Python (Análisis de Datos)**
+- ⚛️ **React (Frontend)**
+- ☕ **Spring Boot (Backend)**
 
-Este repositorio contiene el módulo de **análisis de datos en Python**, encargado de procesar, limpiar y analizar la información financiera del usuario para generar insights útiles que faciliten la toma de decisiones.
+Este repositorio corresponde al módulo de **análisis de datos**, cuyo objetivo es procesar, transformar y generar insights a partir de la información de pedidos, rutas, tiempos de entrega y desempeño operativo.
 
-El objetivo es ayudar a las personas a **identificar patrones de gasto pequeños pero frecuentes** que impactan significativamente sus finanzas personales.
-
----
-
-## 🚀 Funcionalidades principales
-
-- 📥 Carga y procesamiento de datos de gastos
-- 🧹 Limpieza y transformación de datos
-- 📈 Análisis exploratorio (EDA)
-- 🔍 Identificación de gastos hormiga
-- 📊 Generación de métricas e indicadores clave
-- 🧠 Base para futuros modelos predictivos
+El análisis permitirá:
+- 📊 Optimizar rutas de entrega
+- ⏱️ Reducir tiempos de envío
+- 📈 Generar reportes estratégicos
+- 🔍 Detectar patrones y anomalías en la operación
 
 ---
 
-## 🛠️ Tecnologías utilizadas
+## 🧠 Tecnologías Utilizadas
 
-- 🐍 Python 3.x
-- 📊 Pandas
-- 🔢 NumPy (opcional)
-- 📉 Matplotlib / Seaborn (opcional para visualización)
+- Python 3.10+
+- Pandas 🐼
+- NumPy
+- Matplotlib / Seaborn (opcional para visualización)
 
 ---
 
 ## ⚙️ Instalación
 
-Sigue estos pasos para configurar el entorno:
+Sigue estos pasos para configurar el entorno local:
 
 ```bash
-# 1️⃣ Clonar el repositorio
-git clone https://github.com/tu-usuario/neoApp-python.git
+# 1. Clonar el repositorio
+git clone https://github.com/tu-usuario/neoapp-data.git
 
-# 2️⃣ Entrar al directorio
-cd neoApp-python
+# 2. Ingresar al proyecto
+cd neoapp-data
 
-# 3️⃣ Crear entorno virtual (opcional pero recomendado)
+# 3. Crear entorno virtual (opcional pero recomendado)
 python -m venv venv
 
-# 4️⃣ Activar entorno virtual
-# En Windows:
+# 4. Activar entorno virtual
+# En Windows
 venv\Scripts\activate
-# En Mac/Linux:
+# En Linux/Mac
 source venv/bin/activate
 
-# 5️⃣ Instalar dependencias
-pip install pandas
-```
-
----
-
-## 📦 Uso básico de Pandas
-
-Algunos comandos clave que se utilizan en este proyecto:
-
-```python
-import pandas as pd
-
-# 📥 Cargar datos
-df = pd.read_csv("gastos.csv")
-
-# 👀 Ver primeras filas
-df.head()
-
-# 📊 Resumen estadístico
-df.describe()
-
-# 🧹 Limpieza de datos
-df.dropna(inplace=True)
-
-# 🔍 Filtrar gastos hormiga (ejemplo)
-gastos_hormiga = df[df["monto"] < 10]
-
-# 📈 Agrupar por categoría
-df.groupby("categoria")["monto"].sum()
-```
-
----
-
-## 📁 Estructura del proyecto
-
-```
-neoApp-python/
-│
-├── data/              # 📂 Datos crudos y procesados
-├── notebooks/        # 📓 Análisis exploratorio
-├── src/              # 🧠 Lógica del análisis
-├── reports/          # 📊 Resultados y visualizaciones
-└── README.md         # 📄 Documentación
-```
-
----
-
-## 🎯 Objetivo educativo
-
-Este proyecto está diseñado para:
-
-- 👨‍💻 Aprender análisis de datos con Python
-- 🔗 Integrar múltiples tecnologías (full stack)
-- 💡 Resolver problemas reales de finanzas personales
-- 📚 Aplicar buenas prácticas de desarrollo
-
----
-
-## 🤝 Contribuciones
-
-¡Las contribuciones son bienvenidas! 🚀  
-Puedes mejorar análisis, agregar visualizaciones o proponer nuevas funcionalidades.
-
----
-
-## 📌 Futuras mejoras
-
-- 🤖 Modelos de predicción de gastos
-- 📊 Dashboards interactivos
-- 🔗 Integración con API backend (Spring Boot)
-- ⚛️ Conexión en tiempo real con frontend
+# 5. Instalar dependencias
+pip install -r requirements.txt
